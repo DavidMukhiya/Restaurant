@@ -24,7 +24,7 @@ const Restaurant = () => {
             <button className="btn-group__item" onClick={() => filterItem("lunch")}>lunch</button>
             <button className="btn-group__item" onClick={() => filterItem("evening")}>Evening</button>
             <button className="btn-group__item" onClick={() => filterItem("dinner")}>Dinner</button>
-            <button className="btn-group__item">All</button>
+            <button className="btn-group__item" onClick={() => setMenuData(Menu)}>All</button>
           </div>
         </nav>
 
