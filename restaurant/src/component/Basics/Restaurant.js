@@ -4,6 +4,14 @@ import Menu from "./menuApi";
 import MenuCard from "./menuCard";
 
 
+const uniqueList = [
+  ...new Set(
+    Menu.map((curElem) => {
+      return curElem.category;
+    })
+  )
+];
+
 const Restaurant = () => {
 
   const [menuData, setMenuData] = useState(Menu);
